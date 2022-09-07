@@ -13,19 +13,19 @@ int main(void)
     c = b * b;
     d = a / c;
 
-    if (c < 18.5)
+    if (d < 18.5)
     {
         printf("\nYou are underweighted!");
     }
-    else if (18.5 <= c < 24.9)
+    else if (18.5 <= d < 24.9)
     {
         printf("\nYou are in normal weight.");
     }
-    else if (25 <= c < 29.9)
+    else if (25 <= d < 29.9)
     {
         printf("\nYou are owerweighted!");
     }
-    else if (30 <= c < 34.9)
+    else if (30 <= d < 34.9)
     {
         printf("\nYou are obese!!");
     }
