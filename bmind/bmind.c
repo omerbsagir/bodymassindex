@@ -3,20 +3,20 @@
 
 int main(void)
 {
-    float a, b;
+    double a, b;
     a = 0.0;
     b = 0.0;
     
     printf("\nPlease enter your weight(kg): ");
-    scanf("%f", &a);
+    scanf("%lf", &a);
 
     printf("\nNow please enter your height(m): ");
-    scanf("%f", &b);
+    scanf("%lf", &b);
 
-    float c = (b * b);
-    float d = (a / c);
+    double c = (b * b);
+    double d = (a / c);
 
-    if (d < 18.5)
+    if (0.0 < d < 18.5)
     {
         printf("\nYou are underweighted!");
     }
@@ -24,11 +24,11 @@ int main(void)
     {
         printf("\nYou are in normal weight.");
     }
-    else if (25 <= d < 29.9)
+    else if (25.0 <= d < 29.9)
     {
         printf("\nYou are owerweighted!");
     }
-    else if (30 <= d < 34.9)
+    else if (30.0 <= d < 34.9)
     {
         printf("\nYou are obese!!");
     }
