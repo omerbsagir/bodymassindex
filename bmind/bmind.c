@@ -4,6 +4,11 @@
 int main(void)
 {
     float a, b, c, d;
+    a = 0.0;
+    b = 0.0;
+    c = 0.0;
+    d = 0.0;
+    
     printf("\nPlease enter your weight(kg): ");
     scanf("%f", &a);
 
