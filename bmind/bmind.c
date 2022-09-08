@@ -31,6 +31,6 @@ int main(void)
     }
     else
     {
-        printf("\nYou need to leave eating dude!!!!!");
+        printf("\nYou need to leave eating!!!!!");
     }
 }
