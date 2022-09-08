@@ -20,15 +20,15 @@ int main(void)
     {
         printf("You are underweighted! \n");
     }
-    else if ( 18.5 <= d < 25.1 )
+    else if ( 18.5 <= d && d < 25.1 )
     {
         printf("You are normal weighted \n");
     }
-    else if ( 25.1 <= d < 30 )
+    else if ( 25.1 <= d && d < 30 )
     {
         printf("You are overweighted! \n");
     }
-    else if ( 30 <= d < 35 )
+    else if ( 30 <= d && d < 35 )
     {
         printf("You are obese!! \n");
     }
