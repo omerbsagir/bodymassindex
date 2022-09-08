@@ -16,24 +16,25 @@ int main(void)
     double c = (b * b);
     double d = (a / c);
 
-    if (0.0 < d < 18.5)
+    if ( d < 18.5 )
     {
-        printf("\nYou are underweighted!");
+        printf("You are underweighted! \n");
     }
-    else if (18.5 <= d < 24.9)
+    else if ( 18.5 <= d < 25.1 )
     {
-        printf("\nYou are in normal weight.");
+        printf("You are normal weighted \n");
     }
-    else if (25.0 <= d < 29.9)
+    else if ( 25.1 <= d < 30 )
     {
-        printf("\nYou are owerweighted!");
+        printf("You are overweighted! \n");
     }
-    else if (30.0 <= d < 34.9)
+    else if ( 30 <= d < 35 )
     {
-        printf("\nYou are obese!!");
+        printf("You are obese!! \n");
     }
     else
     {
-        printf("\nYou need to leave eating!!!!!");
+        printf("You are extremely obese!!!! \n");
     }
+    
 }
