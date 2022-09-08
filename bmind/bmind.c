@@ -3,11 +3,9 @@
 
 int main(void)
 {
-    float a, b, c, d;
+    float a, b;
     a = 0.0;
     b = 0.0;
-    c = 0.0;
-    d = 0.0;
     
     printf("\nPlease enter your weight(kg): ");
     scanf("%f", &a);
@@ -15,8 +13,8 @@ int main(void)
     printf("\nNow please enter your height(m): ");
     scanf("%f", &b);
 
-    c = (b * b);
-    d = (a / c);
+    float c = (b * b);
+    float d = (a / c);
 
     if (d < 18.5)
     {
