@@ -19,6 +19,19 @@ int main(void)
     if ( d < 18.5 )
     {
         printf("You are underweighted! \n");
+        float goalw;
+        printf("What is your weight goal?\n");
+        scanf("%f", &goalw);
+        float fark = goalw - a;
+        printf("How many weeks are you planning to reach it?\n");
+        int weeks;
+        scanf("%d", &weeks);
+        float freq = fark / weeks;
+        double dailycals = freq * 1000;
+        printf("You need to take %lf calories more daily to reach your goal\n", dailycals);
+        printf("If you take those calories you will gain %f kilograms each week.\n", freq);
+
+
     }
     else if ( 18.5 <= d && d < 25.1 )
     {
@@ -27,14 +40,50 @@ int main(void)
     else if ( 25.1 <= d && d < 30 )
     {
         printf("You are overweighted! \n");
+        float goalw;
+        printf("What is your weight goal?\n");
+        scanf("%f", &goalw);
+        float fark = a - goalw;
+        printf("How many weeks are you planning to reach it?\n");
+        int weeks;
+        scanf("%d", &weeks);
+        float freq = fark / weeks;
+        double dailycals = freq * 1000;
+
+        printf("You need to create %lf calorie deficit daily to reach your goal\n", dailycals);
+        printf("If you can do it you will lose %f kilograms each week.\n", freq);
+
     }
     else if ( 30 <= d && d < 35 )
     {
         printf("You are obese!! \n");
+        float goalw;
+        printf("What is your weight goal?\n");
+        scanf("%f", &goalw);
+        float fark = goalw - a;
+        printf("How many weeks are you planning to reach it?\n");
+        int weeks;
+        scanf("%d", &weeks);
+        float freq = fark / weeks;
+        double dailycals = freq * 1000;
+
+        printf("You need to create %lf calorie deficit daily to reach your goal\n", dailycals);
+        printf("If you can do it you will lose %f kilograms each week.\n", freq);
+
     }
     else
     {
         printf("You are extremely obese!!!! \n");
+        float goalw;
+        printf("What is your weight goal?\n");
+        scanf("%f", &goalw);
+        float fark = goalw - a;
+        printf("How many weeks are you planning to reach it?\n");
+        int weeks;
+        scanf("%d", &weeks);
+        float freq = fark / weeks;
+        double dailycals = freq * 1000;
+        printf("You need to create %lf calorie deficit daily to reach your goal\n", dailycals);
+        printf("If you can do it you will lose %f kilograms each week.\n", freq);
     }
-    
 }
